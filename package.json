@@ -1,0 +1,15 @@
+{
+  "name": "puppeteer-testing",
+  "version": "1.0.0",
+  "description": "a sandbox for e2e testing with puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [],
+  "author": "Jazz Lyles <ripley36706@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^1.7.0"
+  }
+}

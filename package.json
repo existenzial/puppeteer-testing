@@ -4,12 +4,18 @@
   "description": "a sandbox for e2e testing with puppeteer",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node --inspect index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "puppeteer",
+    "e2e",
+    "headless-chrome",
+    "chrome"
+  ],
   "author": "Jazz Lyles <ripley36706@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "bunyan": "^1.8.12",
     "puppeteer": "^1.7.0"
   }
 }

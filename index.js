@@ -33,7 +33,26 @@ puppeteer.launch()
       };
     });
 
-    log.info({ dimensions });
+    /*
+    INTERACTIVITY:
+      - Type
+      - Click
+    */
+    await page.type('#lst-ib', 'michael jackson anti-gravity shoes patent');
+    await page.click('input[name="btnK"]');
+    await page.waitForSelector('h3.r > a');
+
+    const searchResults = await page.evaluate(results => {
+      const anchors = [...document.querySelectorAll(results)];
+      return anchors.map((a) => {
+        return {
+          title: a.innerText,
+          href: a.href,
+        };
+      });
+    }, 'h3.r > a');
+
+    log.info({ dimensions, searchResults });
 
     /*
     VQA:

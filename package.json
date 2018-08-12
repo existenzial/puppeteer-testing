@@ -1,14 +1,13 @@
 {
-  "name": "puppeteer-testing",
+  "name": "puppeteer-sandbox",
   "version": "1.0.0",
-  "description": "a sandbox for e2e testing with puppeteer",
+  "description": "a sandbox for puppeteer",
   "main": "index.js",
   "scripts": {
     "test": "node --inspect index.js"
   },
   "keywords": [
     "puppeteer",
-    "e2e",
     "headless-chrome",
     "chrome"
   ],
